@@ -8,7 +8,7 @@
 const cipher = {
     
  encode: function(){
-
+    
  }
 
 //  decode: function(){
