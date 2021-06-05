@@ -1,8 +1,8 @@
 const cipher = {
     
  encode: function(offset, string){
-     let cipherEncode = "Laura";
-     let caesarCode = "3";
+     let cipherEncode = "";
+     let caesarCode = "";
     
      for(let i=0; i<=string.length; i++) {
         if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {

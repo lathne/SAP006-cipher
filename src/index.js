@@ -7,8 +7,8 @@ const encodeButton = document.getElementById('encodeButton');
 encodeButton.addEventListener("click", e => { 
     let offset = document.getElementById("key").value;
     let string = document.getElementById("textarea").value;
-    //innerHTML???
 })
+document.getElementById(result).innerHtml = cipher.encode(offset, string);
 
 
 const decodeButton = document.getElementById('decodeButton');
@@ -16,8 +16,9 @@ const decodeButton = document.getElementById('decodeButton');
 decodeButton.addEventListener("click", e => { 
     let offset = document.getElementById("key").value;
     let string = document.getElementById("textarea").value;
-    //innerHTML???
+    
 })
+document.getElementById(result).innerHtml = cipher.decode(offset, string);
 
 
 
