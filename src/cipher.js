@@ -1,28 +1,35 @@
-
-
 const cipher = {
     
-//  encode: function(offset, string){
-     
-//     // let caesarCode = "";
-//     // let undefinedText = "";
-//     let cipherText = "";
-//     let newString = "";
-//         //for loop para obter o valor unicode de cada index da string
-//     for(let= i=0; i<=string.length; i++) {
-//         //Letra A na tabela tem valor 65, letra Z tem valor 90
-//         if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-//             //formula do Daniel 
-//            newString = string.charCodeAt(i) - 65 + offset %26 + 65;
-//         }
-//         cipherText = String.fromCharCode(newString);  
-//     }
-//     return cipherText;     
-//  }
+ encode: function(offset, string){
+     let cipherEncode = "Laura";
+     let caesarCode = "3";
+    
+     for(let i=0; i<=string.length; i++) {
+        if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+            caesarCode = ((string.charcodeAt(i) - 65 + offset) % 26) + 65;
+        } 
+        else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+            caesarCode = ((string.charcodeAt(i) - 97 + offset) % 26) + 97;
+        }
+        cipherText = String.fromCharCode(caesarCode);  
+    }
+    return cipherEncode;
+ },
 
-// //  decode: function(){
-
-// //  }
+ decode: function(offset, string){
+    let cipherDecode = "";
+    let caesarCode = "";
+    for(let i=0; i<=string.length; i++) {
+        if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+            caesarCode = ((string.charcodeAt(i) - 65 + offset) % 26);
+        } 
+        else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+            caesarCode = ((string.charcodeAt(i) - 97 + offset) % 26);
+        }
+        cipherText = String.fromCharCode(caesarCode);  
+    }
+    return cipherDecode;
+ }
 
 };
   

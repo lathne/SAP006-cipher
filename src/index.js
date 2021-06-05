@@ -1,24 +1,23 @@
-
-
 import cipher from './cipher.js';
 
-let encodeButton = document.getElementById('encode');
-let decodeButton = document.getElementById('decode');
-let result = document.getElementById('result');
-
-encodeButton.addEventListener("click", e => {
-    result.innerHTML = cipher.encode();
-})
-
-decodeButton.addEventListener("click", e => {
-    result.innerHTML = cipher.decode();
-})
-
-
-
-/* 
-let key = document.getElementById('key').value ??
-let textArea = document.getElementById('textarea').value ??
-*/
-
 console.log(cipher);
+
+const encodeButton = document.getElementById('encodeButton');
+//addEventListener > Event type, function call back
+encodeButton.addEventListener("click", e => { 
+    let offset = document.getElementById("key").value;
+    let string = document.getElementById("textarea").value;
+    //innerHTML???
+})
+
+
+const decodeButton = document.getElementById('decodeButton');
+
+decodeButton.addEventListener("click", e => { 
+    let offset = document.getElementById("key").value;
+    let string = document.getElementById("textarea").value;
+    //innerHTML???
+})
+
+
+
