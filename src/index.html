@@ -4,62 +4,66 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CipherText</title>
+  <title>My Secret Journal</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
   <main class="container">
-    <header>
-        <h1>CypherText</h1>
-        <p>Sua ferramenta online para encriptação de textos</p>
+    <header class="center">
+        <h1>My Secret Journal</h1>
+        <p>Selecione um número no campo Chave e digite seu texto apenas com letras maiúsculas</p>
     </header>
 
-   <section>
-    <p>
-      Selecione um número no campo Chave e digite seu texto apenas com letras maiúsculas
-    </p>
-   </section>     
+  
+    <form class="center form" id="form">
+      
+        <h3><label for="key">Chave</label></h3>
+        <input id="key" type="number" placeholder="Selecione a Chave">
 
-    <section class="box encrypt">
-      
-        <h3><label for="chave">Selecione uma chave</label></h3>
-        <select id="chave" >
-          <option value=0>0</option>
-          <option value=1>1</option>
-          <option value=2>2</option>
-          <option value=3>3</option>
-          <option value=4>4</option>
-          <option value=5>5</option>
-          <option value=6>6</option>
-          <option value=7>7</option>
-          <option value=8>8</option>
-          <option value=9>9</option>
-          <option value=10>10</option>
-          <option value=11>11</option>
-          <option value=12>12</option>
-          <option value=13>13</option>
-          <option value=14>14</option>
-          <option value=15>15</option>
-          <option value=16>16</option>
-          <option value=17>17</option>
-          <option value=18>18</option>
-          <option value=19>19</option>
-          <option value=20>20</option>
-          <option value=21>21</option>
-          <option value=22>22</option>
-          <option value=23>23</option>
-          <option value=24>24</option>
-          <option value=25>25</option>
-          
-        </select>
-        <h3>Digite aqui seu texto</h3>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button onclick="">Criptografar</button>
-        <button onclick="">Descriptografar</button>
-      
+        <h3><label for="">Texto</label></h3>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Digite seu segredo"></textarea>
+        <button id="encode">Criptografar</button>
+        <button id="decode">Descriptografar</button>
+       
+    </form>
+
+    <section>
+      <h3>Resultado</h3>
+      <div id="result"></div>
     </section>
 
   <script src="./index.js" type="module"></script>
+
 </body>
 </html>
+
+<!-- <select id="chave" class="no-scroll">
+  <option value=0>0</option>
+  <option value=1>1</option>
+  <option value=2>2</option>
+  <option value=3>3</option>
+  <option value=4>4</option>
+  <option value=5>5</option>
+  <option value=6>6</option>
+  <option value=7>7</option>
+  <option value=8>8</option>
+  <option value=9>9</option>
+  <option value=10>10</option>
+  <option value=11>11</option>
+  <option value=12>12</option>
+  <option value=13>13</option>
+  <option value=14>14</option>
+  <option value=15>15</option>
+  <option value=16>16</option>
+  <option value=17>17</option>
+  <option value=18>18</option>
+  <option value=19>19</option>
+  <option value=20>20</option>
+  <option value=21>21</option>
+  <option value=22>22</option>
+  <option value=23>23</option>
+  <option value=24>24</option>
+  <option value=25>25</option>
+  <option value=26>26</option>
+</select> -->

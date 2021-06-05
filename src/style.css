@@ -1,1 +1,38 @@
 /* css */
+*{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+main {
+    background-color: silver;
+}
+
+#key {
+    text-align: left;
+    width: 40%;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 40%;
+}
+
+button {
+    padding: 10px;
+    width: 210px;
+}
+
+#result {
+    padding: 1.2rem;
+    margin: 1.2rem auto;
+    width: 40%;
+    
+    border: 1px solid gray;
+    
+}
