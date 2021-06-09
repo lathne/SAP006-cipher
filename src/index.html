@@ -1,69 +1,48 @@
-<!-- aqui será o ponto de entrada da sua aplicação. Este arquivo deve conter a marcação HTML e chamar o CSS e JavaScript necessários. -->
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>My Secret Journal</title>
+  <title>Título</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
+  <nav class="center">
+    <li>Home</li>
+    <li>Sobre</li>
+  </nav>
+
   <main class="container">
+
     <header class="center">
-        <h1>My Secret Journal</h1>
-        <p>Descrição</p>
+      <h1>Título</h1>
+      <p>Descrição ....</p>
     </header>
 
-  
-    <form class="center form" id="form">
-      
-        <h3><label for="key">Chave</label></h3>
-        <input id="key" type="number" placeholder="Selecione a Chave">
 
-        <h3><label for="">Texto</label></h3>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Digite seu segredo"></textarea>
-        <button id="encodeButton">Criptografar</button>
-        <button id="decodeButton">Descriptografar</button>
-       
+    <form class="center form" id="form">
+
+      <h3><label for="key">Chave</label></h3>
+      <input id="key" class="box" type="number" placeholder="Selecione a Chave">
+
+      <h3><label for="textarea">Texto</label></h3>
+      <textarea name="textarea" id="textarea" class="box" cols="30" rows="10" placeholder="Digite seu segredo"></textarea>
+      <button id="encodeButton">Criptografar</button>
+      <button id="decodeButton">Descriptografar</button>
+
     </form>
 
-    <section>
+    <section class="center">
       <h3>Resultado</h3>
-      <div id="result"></div>
+      <div id="result" class="box"></div>
     </section>
 
-  <script src="./index.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+
+  </main>
 
 </body>
 </html>
 
-<!-- <select id="chave" class="no-scroll">
-  <option value=0>0</option>
-  <option value=1>1</option>
-  <option value=2>2</option>
-  <option value=3>3</option>
-  <option value=4>4</option>
-  <option value=5>5</option>
-  <option value=6>6</option>
-  <option value=7>7</option>
-  <option value=8>8</option>
-  <option value=9>9</option>
-  <option value=10>10</option>
-  <option value=11>11</option>
-  <option value=12>12</option>
-  <option value=13>13</option>
-  <option value=14>14</option>
-  <option value=15>15</option>
-  <option value=16>16</option>
-  <option value=17>17</option>
-  <option value=18>18</option>
-  <option value=19>19</option>
-  <option value=20>20</option>
-  <option value=21>21</option>
-  <option value=22>22</option>
-  <option value=23>23</option>
-  <option value=24>24</option>
-  <option value=25>25</option>
-  <option value=26>26</option>
-</select> -->

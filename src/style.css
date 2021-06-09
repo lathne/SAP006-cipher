@@ -1,38 +1,64 @@
 /* css */
-*{
-    margin: 5px;
-    padding: 5px;
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+/* body {
+    background-image: url('https://wallpaperaccess.com/full/761461.jpg');
+    background-size: cover;
+    opacity: 0.75;
+} */
+
+.center {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.3rem;
+    
 }
 
-main {
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 1.2rem;
+    /* margin-bottom:  ; */
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px 40px 10px 40px;
+}
+
+.container {
     background-color: silver;
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+.box {
+    width: 50%;
+    padding: 1.2rem;
 }
 
 #key {
     text-align: left;
-    width: 40%;
 }
 
 textarea {
     display: block;
     margin: 0 auto;
     text-align: left;
-    width: 40%;
 }
 
 button {
     padding: 10px;
-    width: 210px;
+    width: 190px;
 }
 
 #result {
-    padding: 1.2rem;
     margin: 1.2rem auto;
-    width: 40%;
-    
     border: 1px solid gray;
-    
 }
