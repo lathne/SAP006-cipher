@@ -3,46 +3,116 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Título</title>
+  <title>Meu Diário</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
-  <nav class="center">
-    <li>Home</li>
-    <li>Sobre</li>
+  <nav class="container">
+    <ul>
+      <li>
+        <a href="#modal-info">Informações</a>      
+      </li>
+      <li>
+        <a href="#cifra">Crie seu Código</a>
+      </li>
+      <li>
+        <a href="#result">Resultado</a>
+      </li>
+    </ul>
   </nav>
 
-  <main class="container">
+ 
+ <header class="container" id="modal-info">
+   <h1>Meu Diário</h1>
+   <p class="justify">Manter um diário é uma ótima forma de não deixar o tempo apagar suas memórias. Melhor ainda se você puder escrever tudo o que pensa e sente.</p>
+   <p class="justify"> Mas se você preza por privacidade e não gostaria que pessoas lessem seu diário uma solução perfeita é escrever em código secreto.</p>
+   <p class="justify">Aqui você encontra uma das mais simples e conhecidas técnicas de criptografia. A Cifra de César.</p>
+   <p class="justify">Clique aqui para aprender mais sobre a Cifra de César e aprender a usar a ferramenta.</p>
 
-    <header class="center">
-      <h1>Título</h1>
-      <p>Descrição ....</p>
-    </header>
+   <button class="btn-gradient modal-btn">Como Funciona</button>
+
+ </header>
 
 
-    <form class="center form" id="form">
+
+
+  <main class="container" id="cifra">
+
+    <section>
+      <p>Selecione a Chave com um número de sua preferência e abaixo escreva seu texto.</p>
+    </section>
+
+
+    <form class="form">
 
       <h3><label for="key">Chave</label></h3>
-      <input id="key" class="box" type="number" placeholder="Selecione a Chave">
+      <input id="key" class="box input" type="number">
 
       <h3><label for="textarea">Texto</label></h3>
-      <textarea name="textarea" id="textarea" class="box" cols="30" rows="10" placeholder="Digite seu segredo"></textarea>
-      <button id="encodeButton">Criptografar</button>
-      <button id="decodeButton">Descriptografar</button>
+      <textarea name="textarea" id="textarea" class="box input" cols="30" rows="10"></textarea>
+      <button id="encodeButton" class="btn-gradient">Criptografar</button>
+      <button id="decodeButton" class="btn-gradient">Descriptografar</button>
 
     </form>
 
-    <section class="center">
-      <h3>Resultado</h3>
-      <div id="result" class="box"></div>
-    </section>
-
-    <script src="./index.js" type="module"></script>
-
   </main>
 
+  <section class="result">
+      <h3>Resultado</h3>
+      <div id="result" class="box"></div>
+  </section>
+
+  <footer>
+      <p>Feito por <a href="https://github.com/lathne" target="_blank">Laura</a> durante o Bootcamp da <a href="https://www.laboratoria.la/br" target="_blank">Laboratoria</a> SAP006/2021</p>
+  </footer>
+
+  <!--Modal Start-->
+  <section class="modal-background">
+    <span class="modal" id="modal">
+
+      <span class="modal-header">
+        <h2>Como Funciona</h2>
+        <button class="close-x close-button">&times; <!--easier to position--></button>
+      </span>
+
+      <span class="modal-body">
+        <p class="justify">Códigos secretos têm sido usados ​​por um longo período de tempo. Desde que a linguagem e a comunicação foram inventadas, ficamos fascinados em obscurecê-la. Códigos e cifras foram desenvolvidos para ocultar mensagens. Um método famoso é a Cifra de César.</p>
+        <h3>Sobre a cifra de César</h3>
+        <p class="justify">Júlio César reconheceu a necessidade de comunicação com seus generais, mas não queria que seus oponentes soubessem de seus planos. Todos escreviam a mesma linguagem, então ele desenvolveu uma cifra que todos os seus generais usavam.</p>
+        <p class="justify">A Cifra de César é uma cifra de substituição de letras com um algoritmo muito simples. Substitua cada letra por uma diferente em um número fixo de casas no alfabeto. Por exemplo, um deslocamento para a direita (ou rotação) de 1 transforma todos os A's em B's, B's em C's e assim por diante. O Z se transforma em A.</p>
+       
+        <h3>Como criar seu código</h3>
+        <ol>
+          <li>Determine o número que deseja de deslocamento no campo "Chave"</li>
+          <li>No campo "Texto" escreva a palavra ou frase que desejar</li>
+          <li>Clique no botão Criptografar</li>
+          <li>Seu código secreto aparecerá logo abaixo do campo "Resultado"</li>
+        </ol> 
+      
+      
+        <h3>Como reverter seu código</h3>
+
+        <p>Se no futuro quiser ler seu diário novamente:</p>
+
+        <ol>
+          <li>Lembre-se de guardar a chave de deslocamento escolhida no campo "Chave"</li>
+          <li>No campo "Texto" escreva seu texto criptografado</li>
+          <li>Clique no botão Descriptografar</li>
+          <li>Seu texto original aparecerá logo abaixo do campo "Resultado"</li>
+        </ol> 
+      
+        
+
+      </span>
+      <button id="close-button" class="btn-gradient">Voltar</button>
+    </span>
+  </section>
+
+<!--Modal End-->
+
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
 
