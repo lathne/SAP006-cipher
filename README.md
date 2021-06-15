@@ -34,8 +34,6 @@ Essa pessoa poderá encriptar seus textos, guardar a chave de deslocamento e fut
 
 ## 4. Design
 
-Primeiramente, foi definido que o layout da página principal de encriptação e desencriptaçao contaria com duas caixas de textos:
-
 O design da pagina foi definido pensando nas funcionalidades Criptografar e Descriptografar.
 
 Para isso foi implementado:
@@ -46,13 +44,14 @@ Para isso foi implementado:
  - Um botão para Descriptografar o texto;
  - Um campo onde mostra o resultado independente da funcionalidade escolhida;
   
-Foi implementada uma barra de navegação para organizar e facilitar a escolha do conteúdo, e também um modal que traz informações mais detalhadas sobre a Cifra de Cesar, bem como instruções para o uso da aplicação.
+Foi implementada adicionalmente uma barra de navegação para organizar e facilitar a escolha do conteúdo, e também um modal que traz informações mais detalhadas sobre a Cifra de Cesar, bem como instruções para o uso da aplicação.
 
 ## 5. Instalação 
 
 Para instalar e executar a aplicação:
 
   - Faça o fork do repositório para salvar os arquivos e salve no seu computador
+  -
   - Utilize um editor de texto como Atom ou Visual Studio Code
   - Instale o Node.js
   - Instale o NPM e no terminal rode um npm install e npm start.
@@ -62,3 +61,5 @@ Para fazer o deploy:
 Basta rodar no terminal (de dentro do diretório): npm run deploy
 
 ## Projeto realizado durante o Bootcamp da Laboratoria SAP006 <3
+
+

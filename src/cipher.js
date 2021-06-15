@@ -1,10 +1,10 @@
 const cipher = {
     
  encode: function(offset, string){
-      //Se o tipo do offset não for um número de uma mensagem de erro
+
       if(offset == null || !string) {
       throw new TypeError('A chave precisa ser um número');
-   } 
+     } 
 
      let cipherEncode = "";
      let offsetNumber = parseInt(offset, 10);
@@ -13,7 +13,7 @@ const cipher = {
         let charCode = string.charCodeAt(i);
             //numeros
          if(charCode >= 48 && charCode <= 57) {
-            let switchCode = ((charCode - 48 + offsetNumber) % 26) + 48;
+            let switchCode = ((charCode - 48 + offsetNumber) % 10) + 48;
             cipherEncode += String.fromCharCode(switchCode); 
          } //letras maiusculas
          else if(charCode >= 65 && charCode <= 90) {
@@ -23,7 +23,7 @@ const cipher = {
          else if(charCode >= 97 && charCode <= 122) {
             let switchCode = ((charCode - 97 + offsetNumber) % 26) + 97;
             cipherEncode += String.fromCharCode(switchCode); 
-         } //espaço, exclamação e @
+         } //espaço, ! e @
          else if(charCode == 32 || charCode == 33 || charCode == 64) {
            //retorne o caractere nesse index específico 
             cipherEncode += string.charAt(i);
@@ -51,7 +51,7 @@ const cipher = {
       let charCode = string.charCodeAt(i);
       
       if(charCode >= 48 && charCode <= 57) {
-         let switchCode = 48-((48 - charCode + offsetNumber) % 26);
+         let switchCode = 48-((48 - charCode + offsetNumber) % 10);
          cipherDecode += String.fromCharCode(switchCode); 
       } 
       else if(charCode >= 65 && charCode <= 90) {

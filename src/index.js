@@ -4,7 +4,7 @@ console.log(cipher);
     
 
 const encodeButton = document.getElementById('encodeButton');
-//addEventListener > Event type, function call back
+
 encodeButton.addEventListener("click", event => { 
     event.preventDefault()
     let offset = document.getElementById("key").value;

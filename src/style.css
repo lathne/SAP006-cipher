@@ -48,11 +48,11 @@ nav a:hover {
 .container, 
 .result{
     text-align: center;
-    background-color: var(--transparent-gray);
     width: min(100vw, 900px);
     margin: 2rem auto;
     padding: 2.5rem;
- 
+    
+    background-color: var(--transparent-gray);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
@@ -189,8 +189,8 @@ footer a:hover {
     border-radius: 10px;
 
     /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
