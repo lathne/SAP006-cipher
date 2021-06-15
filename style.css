@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --gray: #6b6a6a;
+    --transparent-gray: rgb(122, 122, 122, 0.5);
+    --light-gray: #aaaaaa;
+    --transparent-light-gray: rgb(156, 156, 156, 0.5);
+    --orange: #ec6258;
+    --blue: #8cb1e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./images/journal.jpg);
+    min-height: 100vh; /* entire viewport*/
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+nav ul {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+    transition: 0.2s ease all;
+}
+
+.container, 
+.result{
+    text-align: center;
+    width: min(100vw, 900px);
+    margin: 2rem auto;
+    padding: 2.5rem;
+    
+    background-color: var(--transparent-gray);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
+}
+
+h1, 
+h2,
+h3,
+p,
+li {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.justify {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/*Inputs*/
+.box {
+    width: 80%;
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--transparent-light-gray);
+    margin-bottom: 10px;
+}
+
+.input {
+    text-align: left;
+    color: var(--snow);
+    font-size: 1.3rem;
+    margin: 0 auto;
+}
+
+.input:focus{
+    border-bottom: 3px solid var(--orange);
+    transition: 0.2s ease all;
+}
+
+
+/*Hide arrows from input type number > Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Hide arrows from input type number > Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Buttons*/
+.btn-gradient {
+    display: inline-block;
+    background-image: linear-gradient(to right, #EC6F66 0%, #F3A183  51%, #EC6F66  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    width: 260px;
+    text-align: center;
+    
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+    color: var(--snow);            
+    font-size: 1.3rem;
+    font-weight: 900;
+  } 
+
+#result {
+    height: 300px;
+    margin: 20px auto;
+    word-wrap: break-word; /*solution for breaking lines to prevent overflow*/
+    word-spacing: 5px;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--transparent-light-gray);
+}
+
+footer {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+/*Modal*/
+
+.modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #6b6a6a;
+    width: 80%;
+    height: 90%;
+    max-height: 100%;
+    overflow-y: auto;
+    margin-bottom: 40px;
+
+    box-shadow: 0 0 16px 0 rgba(255, 254, 254, 0.5);
+    border-radius: 10px;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    text-align: center;
+    margin-left: 0 auto;
+}
+
+.modal-header .close-x {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 30px;
+
+    font-size: 2.0rem;
+    font-weight: 900;
+    color: var(--orange);
+
+}
+
+.modal-body {
+    margin: 40px;
+}
+
+.modal-body h3 {
+    color: var(--blue);
+}
+
+.modal-body li {
+    list-style-position: inside;
+}
+
+#close-button {
+    display: block;
+    margin: 20px auto;
+}
