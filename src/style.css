@@ -9,7 +9,6 @@
     --blue: #8cb1e6;
 }
 
-
 * {
     margin: 0;
     padding: 0;  
@@ -18,8 +17,7 @@
 }
 
 body {
-    background-image: url(/images/journal.jpg);
-    /* background-image: url(https://i.ibb.co/Fg3GbH8/photo-1587135991058-8816b028691f-ixid-Mnwx-Mj-A3f-DB8-MHxz-ZWFy-Y2h8-Mj-F8f-G5vd-GVib29rf-GVuf-DB8f.jpg'); */
+    background-image: url(./images/journal.jpg);
     min-height: 100vh; /* entire viewport*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,12 +27,11 @@ body {
     color: white;
 }
 
-
 nav ul {
     display: flex;    
     align-items: center;
     justify-content: center;
-    list-style: none;    
+    list-style: none;
 }
 
 nav a {
@@ -59,7 +56,6 @@ nav a:hover {
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
-   
 }
 
 h1, 
@@ -112,7 +108,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/*Button*/
+/*Buttons*/
 .btn-gradient {
     display: inline-block;
     background-image: linear-gradient(to right, #EC6F66 0%, #F3A183  51%, #EC6F66  100%);
@@ -127,15 +123,7 @@ input[type=number] {
     color: var(--snow);            
     font-size: 1.3rem;
     font-weight: 900;
-  }
- 
-  .btn-grad:hover {
-    transition: 0.5s;
-    color: #fff;
-    
-    text-decoration: none;
-  }
- 
+  } 
 
 #result {
     height: 300px;
@@ -145,19 +133,19 @@ input[type=number] {
 
     font-size: 1.5rem;
     font-weight: 500;
-    color: #a3423b;
+    color: white;
     background-color: var(--transparent-light-gray);
 }
 
 footer {
     text-align: center;
     font-weight: 400;
-    color: var(--snow);
+    color: white;
 }
 
 footer a {
     text-decoration: none;
-    color: var(--snow);
+    color: white;
 }
 
 footer a:hover {
