@@ -18,7 +18,7 @@
 
 body {
     background-image: url(./images/journal.jpg);
-    min-height: 100vh; /* entire viewport*/
+    min-height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
 
