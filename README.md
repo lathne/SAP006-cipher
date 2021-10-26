@@ -51,7 +51,6 @@ Foi implementada adicionalmente uma barra de navegação para organizar e facili
 Para instalar e executar a aplicação:
 
   - Faça o fork do repositório para salvar os arquivos e salve no seu computador
-  -
   - Utilize um editor de texto como Atom ou Visual Studio Code
   - Instale o Node.js
   - Instale o NPM e no terminal rode um npm install e npm start.
