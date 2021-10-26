@@ -6,7 +6,8 @@
 * [2. Usuários](#2-usuários)
 * [3. Produto](#3-produto)
 * [4. Design](#4-design)
-* [5. Instalação](#5-instalação)
+* [5. Objetivos de Aprendizado](#5-objetivos-de-aprendizado)
+* [6. Instalação](#6-instalação)
 
 ***
 
