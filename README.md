@@ -7,7 +7,7 @@
 * [3. Produto](#3-produto)
 * [4. Design](#4-design)
 * [5. Instalação](#5-instalação)
-*
+
 ***
 
 ## 1. Introdução
